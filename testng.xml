@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="10">
+<listeners> 
+<listener class-name="com_trackflow_generic.listener"/></listeners>
+
+  <test thread-count="5" name="Test">
+    <classes>
+      
+      <class name="com_trackflow_test.logintest"/>
+      <class name="com_trackflow_test.hometest"/>
+      <class name="com_trackflow_test.thirdpartytest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

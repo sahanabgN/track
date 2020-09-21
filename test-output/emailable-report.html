@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">12</td><td class="num">0</td><td class="num attn">2</td><td class="num">55,476</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com_trackflow_test.hometest</td><td><a href="#m0">userandgroup_newuser</a></td><td rowspan="1">1600675483754</td><td rowspan="1">4396</td></tr><tr class="failedeven"><td><a href="#m1">userandgroupuser</a></td><td rowspan="1">1600675513868</td><td rowspan="1">7287</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="7">com_trackflow_test.hometest</td><td><a href="#m2">newuserdata</a></td><td rowspan="5">1600675488787</td><td rowspan="5">5107</td></tr><tr class="passedeven"><td><a href="#m3">newuserdata</a></td></tr><tr class="passedeven"><td><a href="#m4">newuserdata</a></td></tr><tr class="passedeven"><td><a href="#m5">newuserdata</a></td></tr><tr class="passedeven"><td><a href="#m6">newuserdata</a></td></tr><tr class="passedeven"><td><a href="#m7">verifySidemenu</a></td><td rowspan="1">1600675483530</td><td rowspan="1">224</td></tr><tr class="passedeven"><td><a href="#m8">verifytoolbarelement</a></td><td rowspan="1">1600675482021</td><td rowspan="1">1505</td></tr><tr class="passedodd"><td rowspan="4">com_trackflow_test.logintest</td><td><a href="#m9">logindata</a></td><td rowspan="3">1600675475422</td><td rowspan="3">2074</td></tr><tr class="passedodd"><td><a href="#m10">logindata</a></td></tr><tr class="passedodd"><td><a href="#m11">logindata</a></td></tr><tr class="passedodd"><td><a href="#m12">validatetitle</a></td><td rowspan="1">1600675482005</td><td rowspan="1">12</td></tr><tr class="passedeven"><td rowspan="1">com_trackflow_test.thirdpartytest</td><td><a href="#m13">addpointofcontact</a></td><td rowspan="1">1600675521556</td><td rowspan="1">8130</td></tr></tbody>
+</table>
+<h2>Test</h2><h3 id="m0">com_trackflow_test.hometest#userandgroup_newuser</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Users<br/>new user element not present<br/>   New user<br/>valid usergroupcard title</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=85.0.4183.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: &apos;4.0.0-alpha-6&apos;, revision: &apos;5f43a29cfc&apos;
+System info: host: &apos;DESKTOP-V5PKU20&apos;, ip: &apos;192.168.160.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\Sanu\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50079}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 8ca4ffe5e35346900a3d97bb8b24b6e0
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:316)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:181)
+	at com_trackflow_test.hometest.userandgroup_newuser(hometest.java:105)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 20 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com_trackflow_test.hometest#userandgroupuser</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Users</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Lists differ at element [0]: JGFHJGHJ != admin expected [JGFHJGHJ] but found [admin]
+	at com_trackflow_test.hometest.userandgroupuser(hometest.java:171)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 21 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com_trackflow_test.hometest#newuserdata</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>bg</td><td>sahana</td><td>manager</td><td>sahana</td><td>sahana</td><td>969698698709</td><td>ghjgkdhlkdowqd;lq</td></tr><tr><th colspan="7">Messages</th></tr><tr><td colspan="7"><div class="messages">user is created<br/>no alert present</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com_trackflow_test.hometest#newuserdata</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>shine</td><td>star</td><td>designer</td><td>star</td><td>star</td><td>576870980-</td><td>guhijlk;o;l;oi;l;</td></tr><tr><th colspan="7">Messages</th></tr><tr><td colspan="7"><div class="messages">user is created<br/>no alert present</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com_trackflow_test.hometest#newuserdata</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>get</td><td>gets</td><td>manager</td><td>getsnnknk</td><td>gets</td><td>6.6876898798E10</td><td>uyiuyio87980ilk098pomj9ujlkj09lku9op</td></tr><tr><th colspan="7">Messages</th></tr><tr><td colspan="7"><div class="messages">user is created<br/>no alert present</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com_trackflow_test.hometest#newuserdata</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>liki</td><td>lucky</td><td>engineer</td><td>liki</td><td>liki</td><td>6786987080</td><td>gdhgdkhwkjd;lw</td></tr><tr><th colspan="7">Messages</th></tr><tr><td colspan="7"><div class="messages">user is created<br/>no alert present</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com_trackflow_test.hometest#newuserdata</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>lucky </td><td>star</td><td>web</td><td>lucky</td><td>lucky</td><td>5.87698709E8</td><td>tyfyykjlk</td></tr><tr><th colspan="7">Messages</th></tr><tr><td colspan="7"><div class="messages">user is created<br/>no alert present</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com_trackflow_test.hometest#verifySidemenu</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Setup
+System tools
+Modules tools
+Users & Groups</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com_trackflow_test.hometest#verifytoolbarelement</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Home
+Third parties
+Products/Services
+Commercial
+Financial
+Bank/Cash
+Projects
+Members
+Documents
+Point of sale
+Agenda
+Holidays<br/>home element is not present</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com_trackflow_test.logintest#logindata</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>admin32213</td><td>admin</td></tr><tr><th colspan="2">Messages</th></tr><tr><td colspan="2"><div class="messages">invalid login credential</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com_trackflow_test.logintest#logindata</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>eererer</td><td>24324.0</td></tr><tr><th colspan="2">Messages</th></tr><tr><td colspan="2"><div class="messages">invalid login credential</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">com_trackflow_test.logintest#logindata</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>admin</td><td>admin</td></tr><tr><th colspan="2">Messages</th></tr><tr><td colspan="2"><div class="messages">valid login credential</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">com_trackflow_test.logintest#validatetitle</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">valid login credential</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">com_trackflow_test.thirdpartytest#addpointofcontact</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">ghjjk<br/>element not present in modified list<br/>poswald<br/>element not present in modified list<br/>purc<br/>element not present in modified list<br/>fhgfhg<br/>element not present in modified list<br/>nlk<br/>element not present in modified list<br/>ghjgj<br/>element not present in modified list<br/>access01<br/>element not present in modified list<br/>jrk<br/>element not present in modified list<br/>dabba<br/>element not present in modified list<br/>fj<br/>element not present in modified list<br/>fhghj<br/>element not present in modified list<br/>Verna<br/>element not present in modified list<br/>totoy0<br/>element not present in modified list<br/>fgfdg<br/>element not present in modified list<br/>yamahayamaha<br/>date is incorrect<br/>date is incorrect<br/>date is incorrect<br/>date is incorrect<br/>date is incorrect<br/>date is incorrect<br/>date is incorrect<br/>date is incorrect<br/>date is incorrect<br/>date is incorrect<br/>date is incorrect<br/>date is incorrect<br/>date is incorrect<br/>date is incorrect<br/>date is incorrect<br/>date is incorrect<br/>date is incorrect<br/>date is incorrect<br/>date is incorrect<br/>date is incorrect<br/>21</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

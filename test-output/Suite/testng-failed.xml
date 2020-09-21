@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="10" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <listeners>
+    <listener class-name="com_trackflow_generic.listener"/>
+  </listeners>
+  <test thread-count="10" name="Test(failed)" parallel="tests">
+    <classes>
+      <class name="com_trackflow_test.hometest">
+        <methods>
+          <include name="userandgroup_newuser"/>
+          <include name="teardown"/>
+          <include name="userandgroupuser"/>
+          <include name="initialise"/>
+        </methods>
+      </class> <!-- com_trackflow_test.hometest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
